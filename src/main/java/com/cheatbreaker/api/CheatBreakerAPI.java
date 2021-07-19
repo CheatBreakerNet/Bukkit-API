@@ -28,10 +28,14 @@ import com.cheatbreaker.nethandler.obj.ServerRule;
 import com.cheatbreaker.nethandler.server.*;
 import com.cheatbreaker.nethandler.shared.CBPacketAddWaypoint;
 import com.cheatbreaker.nethandler.shared.CBPacketRemoveWaypoint;
+import com.cheatbreaker.api.commands.*;
+
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
+
 import lombok.Getter;
 import lombok.Setter;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -73,6 +77,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
     private final Map<UUID, Function<World, String>> worldIdentifiers = new HashMap<>();
 
+
     @Override
     public void onEnable() {
         instance = this;
@@ -80,6 +85,10 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         saveDefaultConfig();
 
         Messenger messenger = getServer().getMessenger();
+
+        this.getCommand("cb").setExecutor(new CBCheck());
+        this.getCommand("cbm").setExecutor(new CBMessage());
+        this.getCommand("cbt").setExecutor(new CBTitle());
 
         messenger.registerOutgoingPluginChannel(this, MESSAGE_CHANNEL);
         messenger.registerIncomingPluginChannel(this, MESSAGE_CHANNEL, (channel, player, bytes) -> {
@@ -191,10 +200,6 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
     public Set<Player> getPlayersRunningCheatBreaker() {
         return ImmutableSet.copyOf(playersRunningCheatBreaker.stream().map(Bukkit::getPlayer).collect(Collectors.toSet()));
-    }
-
-    public void isCheatBreakerBanned(UUID playerUuid, Consumer<Boolean> resultListener) {
-        resultListener.accept(false);
     }
 
     public void sendNotification(Player player, CBNotification notification) {

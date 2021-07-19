@@ -1,9 +1,8 @@
-api:
-  # URL to use when checking bans, do not modify.
-  host: api.cheatbreaker.com
-
-  # API key to use when checking bans
-  key: e14437c2-148b-47ce-8594-06737aa6b747
+# Permissions for CheatBreaker commands
+cheatbreaker:
+  commands:
+    message: "cheatbreaker.message"
+    title: "cheatbreaker.title"
 
 # Waypoints which will be sent to the client when
 # they join the server.
