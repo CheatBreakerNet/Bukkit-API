@@ -1,7 +1,7 @@
 name: ${project.name}
 version: ${git.commit.id.abbrev}
-description: CheatBreaker API plugin
-author: CheatBreaker Development Team & Offline CheatBreaker Development Team
+description: CheatBreaker Bukkit API
+author: CheatBreaker & Offline CheatBreaker Development Teams
 website: https://offlinecheatbreaker.com
 main: com.cheatbreaker.api.CheatBreakerAPI
 load: STARTUP
