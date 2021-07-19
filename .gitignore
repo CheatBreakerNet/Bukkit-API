@@ -9,6 +9,9 @@
 out/
 target/
 
+# VSCode
+*.vscode
+
 # Compiled class file
 *.class
 

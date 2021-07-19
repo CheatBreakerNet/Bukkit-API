@@ -1,0 +1,15 @@
+holograms:
+  welcome:
+    x: 5
+    y: 100
+    z: 0
+    lines:
+      - "&2Welcome to the server"
+      - "&c second line"
+  test:
+    x: 10
+    y: 100
+    z: 0
+    lines:
+      - "&aTesting"
+      - "&aHologram"

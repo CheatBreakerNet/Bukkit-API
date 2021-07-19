@@ -1,0 +1,5 @@
+name: cWaypoints
+version: ${project.version}
+main: com.offlinecheatbreaker.cwaypoints.cWaypoints
+api-version: 1.13
+depend: [ CheatBreakerAPI ]

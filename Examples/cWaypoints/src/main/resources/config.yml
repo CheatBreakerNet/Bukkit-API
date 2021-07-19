@@ -1,0 +1,20 @@
+# When making a waypoint, it needs a color which is an integer that you can get from: http://www.shodor.org/stella2java/rgbint.html
+# by putting in your color like (255, 146, 92) to get the RGB int.
+
+waypoints:
+  Spawn:
+    world: world
+    x: 0
+    y: 80
+    z: 0
+    color: 16777215
+    forced: true
+    visible: true
+  Test:
+    world: world_nether
+    x: 10
+    y: 100
+    z: 0
+    color: 43690
+    forced: true
+    visible: false
