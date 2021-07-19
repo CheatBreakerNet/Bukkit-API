@@ -1,8 +1,7 @@
 # Permissions for CheatBreaker commands
-cheatbreaker:
-  commands:
-    message: "cheatbreaker.message"
-    title: "cheatbreaker.title"
+permissions:
+  message: "cheatbreaker.message"
+  title: "cheatbreaker.title"
 
 # Toggles if the server will kick someone for not using CheatBreaker.
 kick:

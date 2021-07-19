@@ -15,7 +15,7 @@ import org.bukkit.entity.Player;
 public class CBMessage implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!sender.hasPermission(CheatBreakerAPI.getInstance().getConfig().getString("cheatbreaker.commands.message"))) {
+        if (!sender.hasPermission(CheatBreakerAPI.getInstance().getConfig().getString("permissions.message"))) {
             return false;
         } else if (args.length < 2) {
             sender.sendMessage(ChatColor.RED + "/cbm <time> <message>");

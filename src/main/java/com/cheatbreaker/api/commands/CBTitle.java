@@ -15,7 +15,7 @@ import org.bukkit.entity.Player;
 public class CBTitle implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!sender.hasPermission(CheatBreakerAPI.getInstance().getConfig().getString("cheatbreaker.commands.title"))) {
+        if (!sender.hasPermission(CheatBreakerAPI.getInstance().getConfig().getString("permissions.title"))) {
             return false;
         } else if (args.length < 4) {
             sender.sendMessage(ChatColor.RED + "/cbt <fadeInTime> <displayTime> <fadeOutTime> <message>");
