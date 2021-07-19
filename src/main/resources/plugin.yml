@@ -8,7 +8,10 @@ load: STARTUP
 commands:
   cb:
     aliases: [cbplayer, cheatbreaker, cheatbreakerplayer]
+    description: Check if a player is using CheatBreaker
   cbm:
     aliases: [cbmessage, cheatbreakermessage]
+    description: Send a message to all CheatBreaker players
   cbt:
     aliases: [cbtitle, cheatbreakertitle]
+    description: Send a title text to all CheatBreaker players
