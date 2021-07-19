@@ -4,6 +4,16 @@ cheatbreaker:
     message: "cheatbreaker.message"
     title: "cheatbreaker.title"
 
+# Toggles if the server will kick someone for not using CheatBreaker.
+kick:
+  enabled: true
+  message: "&cOffline CheatBreaker is required to play on &6&lServer name&r&c!\n&cYou can download it from OfflineCheatBreaker.com"
+
+# Toggle if the server should message someone for using CheatBreaker
+auth-message:
+  enabled: true
+  message: "&aYou are now verified using &r&c&lCheat&r&f&lBreaker"
+
 # Waypoints which will be sent to the client when
 # they join the server.
 waypoints:
