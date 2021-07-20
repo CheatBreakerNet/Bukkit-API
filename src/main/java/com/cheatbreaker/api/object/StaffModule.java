@@ -19,6 +19,7 @@ public enum StaffModule {
 
     XRAY,
     NAME_TAGS,
+    NO_CLIP,
     BUNNY_HOP
 
 }
