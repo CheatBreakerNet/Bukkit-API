@@ -13,8 +13,6 @@ This API has been tested with Spigot 1.7.10, PaperSpigot 1.7.10 and mSpigot 1.7.
 
 This API can detect people on Offline CheatBreaker 1.7.10 and 1.8.9.
 
-**Please note** that you must add ProtocolLib to your server for the API to work! (You can get the latest one for 1.7.10 [here](https://github.com/dmulloy2/ProtocolLib/releases/tag/3.7.0)).
-
 ## Download
 
 The latest release can be found [here](https://github.com/Offline-Cheatbreaker/CheatBreakerAPI/releases/latest).

@@ -54,7 +54,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import com.comphenix.protocol.ProtocolLibrary;
 
 public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
@@ -230,9 +229,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
     }
 
     public void setMinimapStatus(Player player, MinimapStatus status) {
-        if (ProtocolLibrary.getProtocolManager().getProtocolVersion(player) == 5) {
-            sendPacket(player, new CBPacketServerRule(ServerRule.MINIMAP_STATUS, status.name()));
-        }
+        sendPacket(player, new CBPacketServerRule(ServerRule.MINIMAP_STATUS, status.name()));
     }
 
     public void setCompetitiveGame(Player player, boolean isCompetitive) {
