@@ -51,9 +51,10 @@ import org.bukkit.util.Vector;
 import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import com.comphenix.protocol.ProtocolLibrary;
 
 public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
@@ -229,7 +230,9 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
     }
 
     public void setMinimapStatus(Player player, MinimapStatus status) {
-        sendPacket(player, new CBPacketServerRule(ServerRule.MINIMAP_STATUS, status.name()));
+        if (ProtocolLibrary.getProtocolManager().getProtocolVersion(player) == 5) {
+            sendPacket(player, new CBPacketServerRule(ServerRule.MINIMAP_STATUS, status.name()));
+        }
     }
 
     public void setCompetitiveGame(Player player, boolean isCompetitive) {
