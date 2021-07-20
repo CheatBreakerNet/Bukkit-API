@@ -35,10 +35,6 @@ Documentation can be found on the [wiki pages](https://github.com/Offline-Cheatb
 
 Example plugins can be found under the [`Examples`](/Examples) folder. Those examples will help you integrate the CheatBreaker API into your plugins.
 
-## Reporting an issue
-
-If you suspect an issue you can submit one [here](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/issues).
-
 ## Get the Source
 
 1. Install maven `sudo apt-get install maven`
@@ -52,10 +48,6 @@ If you suspect an issue you can submit one [here](https://github.com/Offline-Che
 1. Navigate to the repository home directory
 2. Run `mvn clean install`
 3. Find the compiled jar at `target/CheatBreakerAPI.jar`
-
-## Contributing
-
-You can submit a [pull request](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/pulls) with your changes.
 
 ## Documentation
 
