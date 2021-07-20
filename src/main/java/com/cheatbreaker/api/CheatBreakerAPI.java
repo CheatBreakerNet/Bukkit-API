@@ -261,8 +261,8 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         packet.getPlayers().entrySet().removeIf(entry -> Bukkit.getPlayer(entry.getKey()) != null && !Bukkit.getPlayer(entry.getKey()).getWorld().equals(sendingTo.getWorld()));
     }
 
-    public void addHologram(Player player, UUID id, Vector position, String[] lines) {
-        sendPacket(player, new CBPacketAddHologram(id, position.getX(), position.getY(), position.getZ(), Arrays.asList(lines)));
+    public void addHologram(Player player, UUID id, Vector position, List<String> lines) {
+        sendPacket(player, new CBPacketAddHologram(id, position.getX(), position.getY(), position.getZ(), lines));
     }
 
     public void updateHologram(Player player, UUID id, String[] lines) {
