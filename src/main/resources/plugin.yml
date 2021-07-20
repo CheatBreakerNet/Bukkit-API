@@ -5,6 +5,7 @@ author: CheatBreaker & Offline CheatBreaker Development Teams
 website: https://offlinecheatbreaker.com
 main: com.cheatbreaker.api.CheatBreakerAPI
 load: STARTUP
+depend: [ ProtocolLib ]
 commands:
   cb:
     aliases: [cbplayer, cheatbreaker, cheatbreakerplayer]
