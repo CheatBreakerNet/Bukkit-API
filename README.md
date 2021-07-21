@@ -25,10 +25,6 @@ The latest release can be found [here](https://github.com/Offline-Cheatbreaker/B
 
 `/cbt` - Send a title text to all CheatBreaker players (Default permission: `cheatbreaker.title`).
 
-## Documentation
-
-Documentation can be found on the [wiki pages](https://github.com/Offline-Cheatbreaker/Bukkit-API/wiki).
-
 ## Examples
 
 Example plugins can be found under the [`Examples`](/Examples) folder. Those examples will help you integrate the CheatBreaker API into your plugins.
