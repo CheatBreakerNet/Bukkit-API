@@ -1,8 +1,8 @@
 # CheatBreaker Bukkit API
 
-[![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/CheatBreakerAPI.svg)](https://github.com/Offline-Cheatbreaker/CheatBreakerAPI/releases)
-[![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/CheatBreakerAPI)](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/CheatBreakerAPI)](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/pulls)
+[![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/Bukkit-API.svg)](https://github.com/Offline-Cheatbreaker/Bukkit-API/releases)
+[![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/pulls)
 <a href="https://discord.gg/CheatBreaker"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
 
 The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
@@ -15,7 +15,7 @@ This API can detect people on Offline CheatBreaker 1.7.10 and 1.8.9.
 
 ## Download
 
-The latest release can be found [here](https://github.com/Offline-Cheatbreaker/CheatBreakerAPI/releases/latest).
+The latest release can be found [here](https://github.com/Offline-Cheatbreaker/Bukkit-API/releases/latest).
 
 ## Commands
 
@@ -27,7 +27,7 @@ The latest release can be found [here](https://github.com/Offline-Cheatbreaker/C
 
 ## Documentation
 
-Documentation can be found on the [wiki pages](https://github.com/Offline-Cheatbreaker/CheatBreakerAPI/wiki).
+Documentation can be found on the [wiki pages](https://github.com/Offline-Cheatbreaker/Bukkit-API/wiki).
 
 ## Examples
 
@@ -37,8 +37,8 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 1. Install maven `sudo apt-get install maven`
 2. Verify installation `mvn -v`
-3. Clone the repository `git clone git@github.com:Offline-CheatBreaker/CheatBreakerAPI.git`
-4. Navigate to the new folder `cd CheatBreakerAPI`
+3. Clone the repository `git clone git@github.com:Offline-CheatBreaker/Bukkit-API.git`
+4. Navigate to the new folder `cd Bukkit-API`
 5. Import `pom.xml` into your IDE
 
 ## Compile a Build
@@ -50,11 +50,11 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 ## Documentation
 
-Documentation can be found on the [wiki pages](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/wiki).
+Documentation can be found on the [wiki pages](https://github.com/Offline-CheatBreaker/Bukkit-API/wiki).
 
 ---
 
-**License:** [GNU/GPL v3](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/blob/master/LICENSE)
+**License:** [GNU/GPL v3](https://github.com/Offline-CheatBreaker/Bukkit-API/blob/master/LICENSE)
 
 ## Credits
 
