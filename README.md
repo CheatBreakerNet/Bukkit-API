@@ -1,11 +1,11 @@
-# Offline CheatBreaker Bukkit API
+# CheatBreaker Bukkit API
 
 [![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/CheatBreakerAPI.svg)](https://github.com/Offline-Cheatbreaker/CheatBreakerAPI/releases)
 [![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/CheatBreakerAPI)](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/CheatBreakerAPI)](https://github.com/Offline-CheatBreaker/CheatBreakerAPI/pulls)
 <a href="https://discord.gg/CheatBreaker"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
 
-The Offline CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
+The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
 
 ## Compatibility
 
@@ -43,9 +43,10 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 ## Compile a Build
 
-1. Navigate to the repository home directory
-2. Run `mvn clean install`
-3. Find the compiled jar at `target/CheatBreakerAPI.jar`
+1. Clone our [CheatBreakerAPINetHandler](https://github.com/Offline-CheatBreaker/CheatBreakerAPINetHandler) repository and follow its compilation instructions
+2. Navigate to this repository's home directory
+3. Run `mvn clean install`
+4. Find the compiled jar at `target/CheatBreakerAPI.jar`
 
 ## Documentation
 
@@ -57,4 +58,4 @@ Documentation can be found on the [wiki pages](https://github.com/Offline-CheatB
 
 ## Credits
 
-The original CB API (made by CheatBreaker, LLC) can be found [here](https://github.com/CheatBreaker/CheatBreakerAPI).
+The original CheatBreaker Bukkit API (made by CheatBreaker, LLC) can be found [here](https://github.com/CheatBreaker/CheatBreakerAPI).
