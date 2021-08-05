@@ -29,12 +29,11 @@ public class CBMessage implements CommandExecutor {
                 sender.sendMessage(ChatColor.RED + "You cannot make a message last for longer than 30 seconds!");
                 return false;
             } else {
-                Iterator var6 = Bukkit.getOnlinePlayers().iterator();
-
-                while(var6.hasNext()) {
-                    Player player = (Player)var6.next();
-                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, (long)Integer.parseInt(args[0]), TimeUnit.SECONDS));
+                for (Player player : Bukkit.getOnlinePlayers()) {
+                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, Long.parseInt(args[0]), TimeUnit.SECONDS));
                 }
+                
+                sender.sendMessage(ChatColor.GREEN + "Successfully sent Cheatbreaker message.");
 
                 return false;
             }
