@@ -33,7 +33,7 @@ public class CBMessage implements CommandExecutor {
                     CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, Long.parseInt(args[0]), TimeUnit.SECONDS));
                 }
                 
-                sender.sendMessage(ChatColor.GREEN + "Successfully sent Cheatbreaker message.");
+                sender.sendMessage(ChatColor.GREEN + "Successfully sent a CheatBreaker message.");
 
                 return false;
             }

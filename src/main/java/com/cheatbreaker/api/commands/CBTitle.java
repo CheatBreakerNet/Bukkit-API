@@ -28,7 +28,7 @@ public class CBTitle implements CommandExecutor {
                         CheatBreakerAPI.getInstance().sendTitle(player, TitleType.TITLE, ChatColor.translateAlternateColorCodes('&', message), Duration.ofSeconds(Long.parseLong(args[0])), Duration.ofSeconds(Long.parseLong(args[1])), Duration.ofSeconds(Long.parseLong(args[2])), 1.0F);
                     }
                     
-                    sender.sendMessage(ChatColor.GREEN + "Successfully sent CheatBreaker title.");
+                    sender.sendMessage(ChatColor.GREEN + "Successfully sent a CheatBreaker title.");
                     
                     return false;
                 } else {
