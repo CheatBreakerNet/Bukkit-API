@@ -24,13 +24,12 @@ public class CBTitle implements CommandExecutor {
             String message = StringUtils.join(args, ' ', 3, args.length);
             if (StringUtils.isNumeric(args[0]) && StringUtils.isNumeric(args[1]) && StringUtils.isNumeric(args[2])) {
                 if (Long.parseLong(args[0]) <= 30L && Long.parseLong(args[1]) <= 30L && Long.parseLong(args[2]) <= 30L) {
-                    Iterator var6 = Bukkit.getOnlinePlayers().iterator();
-
-                    while(var6.hasNext()) {
-                        Player player = (Player)var6.next();
+                    for (Player player : Bukkit.getOnlinePlayers()) {
                         CheatBreakerAPI.getInstance().sendTitle(player, TitleType.TITLE, ChatColor.translateAlternateColorCodes('&', message), Duration.ofSeconds(Long.parseLong(args[0])), Duration.ofSeconds(Long.parseLong(args[1])), Duration.ofSeconds(Long.parseLong(args[2])), 1.0F);
                     }
-
+                    
+                    sender.sendMessage(ChatColor.GREEN + "Successfully sent CheatBreaker title.");
+                    
                     return false;
                 } else {
                     sender.sendMessage(ChatColor.RED + "You cannot make an title last for longer than 30 seconds!");
