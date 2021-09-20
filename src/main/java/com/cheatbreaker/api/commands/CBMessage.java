@@ -30,7 +30,7 @@ public class CBMessage implements CommandExecutor {
                 return false;
             } else {
                 for (Player player : Bukkit.getOnlinePlayers()) {
-                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, Long.parseInt(args[0]), TimeUnit.SECONDS));
+                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, (long)Integer.parseInt(args[0]), TimeUnit.SECONDS));
                 }
                 
                 sender.sendMessage(ChatColor.GREEN + "Successfully sent a CheatBreaker message.");
