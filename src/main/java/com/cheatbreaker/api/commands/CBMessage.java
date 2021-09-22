@@ -16,27 +16,23 @@ public class CBMessage implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!sender.hasPermission(CheatBreakerAPI.getInstance().getConfig().getString("permissions.message"))) {
-            return false;
+            sender.sendMessage(ChatColor.RED + "You don't have permission to run /cbm");
         } else if (args.length < 2) {
             sender.sendMessage(ChatColor.RED + "/cbm <time> <message>");
-            return false;
         } else {
             String message = StringUtils.join(args, ' ', 1, args.length);
+            
             if (!StringUtils.isNumeric(args[0])) {
                 sender.sendMessage(ChatColor.RED + args[0] + " isn't a number!");
-                return false;
             } else if (Integer.parseInt(args[0]) > 30) {
                 sender.sendMessage(ChatColor.RED + "You cannot make a message last for longer than 30 seconds!");
-                return false;
             } else {
                 for (Player player : Bukkit.getOnlinePlayers()) {
-                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, (long)Integer.parseInt(args[0]), TimeUnit.SECONDS));
-                }
-                
+                    CheatBreakerAPI.getInstance().sendNotification(player, new CBNotification(message, Long.parseLong(args[0]), TimeUnit.SECONDS));
+                }       
                 sender.sendMessage(ChatColor.GREEN + "Successfully sent a CheatBreaker message.");
-
-                return false;
             }
         }
+        return false;
     }
 }
