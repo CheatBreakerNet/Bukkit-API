@@ -3,7 +3,7 @@
 [![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/Bukkit-API.svg)](https://github.com/Offline-Cheatbreaker/Bukkit-API/releases)
 [![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/pulls)
-<a href="https://discord.gg/CheatBreaker"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
+<a href="https://discord.offlinecheatbreaker.com"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
 
 The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
 
