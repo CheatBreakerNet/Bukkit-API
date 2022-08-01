@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Compile the NetHandler
+echo "Compiling NetHandler..."
+cd NetHandler
+mvn clean install
+
+# Compile the API
+echo "Compiling API..."
+cd ..
+mvn clean install
+
+# Finalize
+echo "Finished compiling!"
+echo "You can find the compiled jar in target/CheatBreakerAPI.jar"

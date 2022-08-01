@@ -39,9 +39,8 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 ## Compile a Build
 
-1. Clone our [Bukkit-API-NetHandler](https://github.com/Offline-CheatBreaker/Bukkit-API-NetHandler) repository and follow its compilation instructions
-2. Navigate to this repository's home directory
-3. Run `mvn clean install`
+1. Clone this repository
+3. Run `./compile`
 4. Find the compiled jar at `target/CheatBreakerAPI.jar`
 
 ## Documentation
