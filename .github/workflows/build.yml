@@ -34,3 +34,4 @@ jobs:
           artifacts: "target/CheatBreakerAPI.jar"
           tag: ${{ steps.commit.outputs.short }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          generateReleaseNotes: true
