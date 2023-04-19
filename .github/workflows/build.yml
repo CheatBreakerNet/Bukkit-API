@@ -30,7 +30,7 @@ jobs:
       # Create a release with the compiled API jar
       - uses: ncipollo/release-action@v1
         with:
-          prerelease: true
+          draft: true
           artifacts: "target/CheatBreakerAPI.jar"
           tag: ${{ steps.commit.outputs.short }}
           token: ${{ secrets.GITHUB_TOKEN }}
