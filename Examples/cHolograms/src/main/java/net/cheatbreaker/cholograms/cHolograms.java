@@ -1,4 +1,4 @@
-package com.offlinecheatbreaker.cholograms;
+package net.cheatbreaker.cholograms;
 
 import com.cheatbreaker.api.CheatBreakerAPI;
 import org.bukkit.Bukkit;

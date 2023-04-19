@@ -1,9 +1,9 @@
 # CheatBreaker Bukkit API
 
-[![Releases](https://img.shields.io/github/release/Offline-CheatBreaker/Bukkit-API.svg)](https://github.com/Offline-Cheatbreaker/Bukkit-API/releases)
-[![Issues](https://img.shields.io/github/issues/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/Offline-CheatBreaker/Bukkit-API)](https://github.com/Offline-CheatBreaker/Bukkit-API/pulls)
-<a href="https://discord.offlinecheatbreaker.com"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
+[![Releases](https://img.shields.io/github/release/CheatBreakerNet/Bukkit-API.svg)](https://github.com/CheatBreakerNet/Bukkit-API/releases)
+[![Issues](https://img.shields.io/github/issues/CheatBreakerNet/Bukkit-API)](https://github.com/CheatBreakerNet/Bukkit-API/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/CheatBreakerNet/Bukkit-API)](https://github.com/CheatBreakerNet/Bukkit-API/pulls)
+<a href="https://discord.cheatbreaker.net"><img src="https://discordapp.com/api/guilds/633325309395206156/widget.png?style=shield" alt="Discord Server"></a>
 
 The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
 
@@ -11,11 +11,11 @@ The CheatBreaker API will allow you to detect when a player is running CheatBrea
 
 This API has been tested with Spigot 1.7.10, PaperSpigot 1.7.10 and mSpigot 1.7.10 (MineHQ Spigot). However, it can work on other/newer versions as well.
 
-This API can detect people on Offline CheatBreaker 1.7.10 and 1.8.9.
+This API can detect people on CheatBreaker 1.7.10 and 1.8.9.
 
 ## Download
 
-The latest release can be found [here](https://github.com/Offline-Cheatbreaker/Bukkit-API/releases/latest).
+The latest release can be found [here](https://github.com/CheatBreakerNet/Bukkit-API/releases/latest).
 
 ## Commands
 
@@ -33,7 +33,7 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 1. Install maven `sudo apt-get install maven`
 2. Verify installation `mvn -v`
-3. Clone the repository `git clone git@github.com:Offline-CheatBreaker/Bukkit-API.git`
+3. Clone the repository `git clone git@github.com:CheatBreaker/Bukkit-API.git`
 4. Navigate to the new folder `cd Bukkit-API`
 5. Import `pom.xml` into your IDE
 
@@ -45,11 +45,11 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 
 ## Documentation
 
-Documentation can be found on the [wiki pages](https://github.com/Offline-CheatBreaker/Bukkit-API/wiki).
+Documentation can be found on the [wiki pages](https://github.com/CheatBreakerNet/Bukkit-API/wiki).
 
 ---
 
-**License:** [GNU/GPL v3](https://github.com/Offline-CheatBreaker/Bukkit-API/blob/master/LICENSE)
+**License:** [GNU/GPL v3](https://github.com/CheatBreakerNet/Bukkit-API/blob/master/LICENSE)
 
 ## Credits
 

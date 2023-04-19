@@ -1,4 +1,4 @@
-package com.offlinecheatbreaker.cwaypoints;
+package net.cheatbreaker.cwaypoints;
 
 import com.cheatbreaker.api.CheatBreakerAPI;
 import com.cheatbreaker.api.object.CBWaypoint;

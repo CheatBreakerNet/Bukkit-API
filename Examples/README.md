@@ -1,20 +1,20 @@
-# Offline CheatBreaker Bukkit API Examples
+# CheatBreaker Bukkit API Examples
 These small examples will help you get started with implementing the CB API into your plugins.
 
 
 ## Reporting an issue
 
-If you suspect an issue you can submit one [here](https://github.com/Offline-CheatBreaker/Bukkit-API/issues).
+If you suspect an issue you can submit one [here](https://github.com/CheatBreakerNet/Bukkit-API/issues).
 
 ## Get the Source
 
 1. Install maven `sudo apt-get install maven`
 2. Verify installation `mvn -v`
-3. Clone the repository `git clone https://github.com/Offline-Cheatbreaker/Bukkit-API.git`
+3. Clone the repository `git clone https://github.com/CheatBreakerNet/Bukkit-API.git`
 4. Navigate to the new folder `cd Bukkit-API/Examples`
 5. Navigate to the example directory you want to compile (e.g. `cd cMiniMap`)
 6. Create a folder named `lib`
-7. Download our [latest API jar file](https://github.com/Offline-CheatBreaker/Bukkit-API/releases/latest)
+7. Download our [latest API jar file](https://github.com/CheatBreakerNet/Bukkit-API/releases/latest)
 8. Move the `CheatBreakerAPI.jar` file you downloaded to the `lib` folder
 9. Import `pom.xml` into your IDE
 
@@ -26,4 +26,4 @@ If you suspect an issue you can submit one [here](https://github.com/Offline-Che
 
 ## Contributing
 
-You can submit a [pull request](https://github.com/Offline-CheatBreaker/Bukkit-API/pulls) with your changes.
+You can submit a [pull request](https://github.com/CheatBreakerNet/Bukkit-API/pulls) with your changes.

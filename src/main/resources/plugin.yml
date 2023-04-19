@@ -1,8 +1,8 @@
 name: ${project.name}
 version: ${git.commit.id.abbrev}
 description: CheatBreaker Bukkit API
-author: CheatBreaker & Offline CheatBreaker Development Teams
-website: https://offlinecheatbreaker.com
+author: CheatBreaker Development Team
+website: https://cheatbreaker.net
 main: com.cheatbreaker.api.CheatBreakerAPI
 load: STARTUP
 commands:

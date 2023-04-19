@@ -1,17 +1,23 @@
-package com.offlinecheatbreaker.cminimap;
+package net.cheatbreaker.cstaffmodules;
 
 import com.cheatbreaker.api.CheatBreakerAPI;
-import com.cheatbreaker.api.object.MinimapStatus;
 import lombok.Getter;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.util.Vector;
 
-public final class cMiniMap extends JavaPlugin implements Listener {
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
-    @Getter cMiniMap instance;
+public final class cStaffModules extends JavaPlugin implements Listener {
+
+    @Getter
+    cStaffModules instance;
 
     @Override
     public void onEnable() {
@@ -24,15 +30,13 @@ public final class cMiniMap extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        instance = this;
+        instance = null;
     }
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        if (this.getConfig().getBoolean("minimapEnabled")) {
-            CheatBreakerAPI.getInstance().setMinimapStatus(event.getPlayer(), MinimapStatus.NEUTRAL);
-        } else {
-            CheatBreakerAPI.getInstance().setMinimapStatus(event.getPlayer(), MinimapStatus.FORCED_OFF);
+        if (event.getPlayer().hasPermission(this.getConfig().getString("permission"))) {
+            CheatBreakerAPI.getInstance().giveAllStaffModules(event.getPlayer());
         }
     }
 }

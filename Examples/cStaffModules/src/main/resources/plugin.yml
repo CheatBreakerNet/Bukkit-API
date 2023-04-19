@@ -1,5 +1,5 @@
 name: cStaffModules
 version: ${project.version}
-main: com.offlinecheatbreaker.cstaffmodules.cStaffModules
+main: net.cheatbreaker.cstaffmodules.cStaffModules
 api-version: 1.13
 depend: [ CheatBreakerAPI ]

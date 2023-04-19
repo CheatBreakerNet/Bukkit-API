@@ -1,5 +1,5 @@
 name: cMiniMap
 version: ${project.version}
-main: com.offlinecheatbreaker.cminimap.cMiniMap
+main: net.cheatbreaker.cminimap.cMiniMap
 api-version: 1.13
 depend: [ CheatBreakerAPI ]

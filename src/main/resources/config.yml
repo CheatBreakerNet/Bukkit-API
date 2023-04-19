@@ -6,7 +6,7 @@ permissions:
 # Toggles if the server will kick someone for not using CheatBreaker.
 kick:
   enabled: true
-  message: "&cOffline CheatBreaker is required to play on &6&lServer name&r&c!\n&cYou can download it from OfflineCheatBreaker.com"
+  message: "&cCheatBreaker is required to play on &6&lServer name&r&c!\n&cYou can download it from CheatBreaker.net"
 
 # Toggle if the server should message someone for using CheatBreaker
 auth-message:

@@ -1,5 +1,5 @@
 name: cHolograms
 version: ${project.version}
-main: com.offlinecheatbreaker.cholograms.cHolograms
+main: net.cheatbreaker.cholograms.cHolograms
 api-version: 1.13
 depend: [ CheatBreakerAPI ]
