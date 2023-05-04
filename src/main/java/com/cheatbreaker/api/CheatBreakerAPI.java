@@ -236,6 +236,10 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         sendPacket(player, new CBPacketServerRule(ServerRule.COMPETITIVE_GAMEMODE, isCompetitive));
     }
 
+    public void setLegacyCombat(Player player, boolean isLegacy) {
+        sendPacket(player, new CBPacketServerRule(ServerRule.LEGACY_COMBAT, isLegacy));
+    }
+
     public void giveAllStaffModules(Player player) {
         for (StaffModule module : StaffModule.values()) {
             CheatBreakerAPI.getInstance().setStaffModuleState(player, module, true);
