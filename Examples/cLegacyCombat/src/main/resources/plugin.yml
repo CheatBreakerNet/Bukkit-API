@@ -1,0 +1,5 @@
+name: cLegacyCombat
+version: ${project.version}
+main: net.cheatbreaker.clegacycombat.cLegacyCombat
+api-version: 1.13
+depend: [ CheatBreakerAPI ]
