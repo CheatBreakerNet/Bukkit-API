@@ -14,7 +14,7 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-          - dependency-name: "git-commit-id-maven-plugin"
+          - dependency-name: "io.github.git-commit-id:git-commit-id-maven-plugin"
             versions: ["5.x", "6.x", "7.x"]
   - package-ecosystem: "maven" # See documentation for possible values
     directory: "Examples/cHolograms" # Location of package manifests
