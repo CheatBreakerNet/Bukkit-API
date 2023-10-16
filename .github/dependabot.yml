@@ -12,4 +12,24 @@ updates:
   - package-ecosystem: "maven" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "daily"
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "Examples/cHolograms" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "Examples/cLegacyCombat" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "Examples/cMiniMap" # Location of package manifests
+    schedule:
+      interval: "daily" 
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "Examples/cStaffModules" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "Examples/cWaypoints" # Location of package manifests
+    schedule:
+      interval: "daily"
