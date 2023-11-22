@@ -240,6 +240,10 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         sendPacket(player, new CBPacketServerRule(ServerRule.LEGACY_COMBAT, isLegacy));
     }
 
+    public void setFastMath(Player player, boolean state) {
+        sendPacket(player, new CBPacketServerRule(ServerRule.FORCE_DISABLE_FAST_MATH, state));
+    }
+
     public void giveAllStaffModules(Player player) {
         for (StaffModule module : StaffModule.values()) {
             CheatBreakerAPI.getInstance().setStaffModuleState(player, module, true);
