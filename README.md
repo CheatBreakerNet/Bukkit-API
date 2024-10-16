@@ -7,27 +7,9 @@
 
 The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
 
-## Compatibility
+## Documentation
 
-This API has been tested with Spigot 1.7.10, PaperSpigot 1.7.10 and mSpigot 1.7.10 (MineHQ Spigot). However, it can work on other/newer versions as well.
-
-This API can detect people on CheatBreaker 1.7.10 and 1.8.9.
-
-## Download
-
-The latest release can be found [here](https://github.com/CheatBreakerNet/Bukkit-API/releases/latest).
-
-## Commands
-
-`/cb (username)` - Check if a player is using CheatBreaker.
-
-`/cbm` - Send a message to all CheatBreaker players (Default permission: `cheatbreaker.message`).
-
-`/cbt` - Send a title text to all CheatBreaker players (Default permission: `cheatbreaker.title`).
-
-## Examples
-
-Example plugins can be found under the [`Examples`](/Examples) folder. Those examples will help you integrate the CheatBreaker API into your plugins.
+Documentation can be found [here](https://docs.cheatbreaker.net/category/bukkit-api).
 
 ## Get the Source
 
@@ -42,10 +24,6 @@ Example plugins can be found under the [`Examples`](/Examples) folder. Those exa
 1. Clone this repository
 3. Run `./compile`
 4. Find the compiled jar at `target/CheatBreakerAPI.jar`
-
-## Documentation
-
-Documentation can be found on the [wiki pages](https://github.com/CheatBreakerNet/Bukkit-API/wiki).
 
 ---
 
