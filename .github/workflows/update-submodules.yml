@@ -1,0 +1,20 @@
+name: Update submodule
+on:
+  repository_dispatch:
+    types: update
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+          ref: ${{ github.event.client_payload.branch }}
+          submodules: recursive
+      - name: Update module
+        run: |
+          git submodule update --init --recursive --checkout -f --remote -- "${{github.event.client_payload.module}}"
+          git config --global user.name "GitHub Action"
+          git config --global user.email "noreply@github.com"
+          git commit -am "Update the ${{github.event.client_payload.module}} module"
+          git push
