@@ -337,6 +337,35 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         sendPacket(player, new CBPacketCooldown(cooldown.getMessage(), 0L, cooldown.getIcon().getId()));
     }
 
+    public void sendWorldBorder(Player player, CBWorldBorder border) {
+        sendPacket(player, new CBPacketWorldBorder(
+                border.getId(),
+                border.getWorld(),
+                border.isCancelsExit(),
+                border.isCanShrinkExpand(),
+                border.getColor(),
+                border.getMin_x(),
+                border.getMin_z(),
+                border.getMax_x(),
+                border.getMax_z()
+        ));
+    }
+
+    public void sendWorldBorderUpdate(Player player, CBPacketWorldBorderUpdate border) {
+        sendPacket(player, new CBPacketWorldBorderUpdate(
+                border.getId(),
+                border.getMinX(),
+                border.getMinZ(),
+                border.getMaxX(),
+                border.getMaxZ(),
+                border.getDurationTicks()
+        ));
+    }
+
+    public void sendWorldBorderRemove(Player player, CBWorldBorder border) {
+        sendPacket(player, new CBPacketWorldBorderRemove(border.getId()));
+    }
+
     public void voiceEnabled(boolean enabled) {
         voiceEnabled = enabled;
     }

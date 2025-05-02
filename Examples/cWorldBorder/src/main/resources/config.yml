@@ -1,0 +1,13 @@
+# When making a world border, it needs a color which is an integer that you can get from: http://www.shodor.org/stella2java/rgbint.html
+# by putting in your color like (255, 146, 92) to get the RGB int.
+
+worldborders:
+  Spawn:
+    world: world
+    min_x: 0
+    min_z: 0
+    max_x: 100
+    max_z: 100
+    prohibit_exiting: false
+    allow_shrink_expand: false
+    color: 16777215

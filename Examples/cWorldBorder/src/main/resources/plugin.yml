@@ -1,0 +1,5 @@
+name: cWorldBorder
+version: ${project.version}
+main: net.cheatbreaker.cworldborder.cWorldBorder
+api-version: 1.13
+depend: [ CheatBreakerAPI ]
