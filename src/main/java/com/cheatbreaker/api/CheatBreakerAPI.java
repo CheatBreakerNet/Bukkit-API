@@ -351,7 +351,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         ));
     }
 
-    public void sendWorldBorderUpdate(Player player, CBPacketWorldBorderUpdate border) {
+    public void updateWorldBorder(Player player, CBPacketWorldBorderUpdate border) {
         sendPacket(player, new CBPacketWorldBorderUpdate(
                 border.getId(),
                 border.getMinX(),
@@ -362,7 +362,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         ));
     }
 
-    public void sendWorldBorderRemove(Player player, CBWorldBorder border) {
+    public void removeWorldBorder(Player player, CBWorldBorder border) {
         sendPacket(player, new CBPacketWorldBorderRemove(border.getId()));
     }
 
