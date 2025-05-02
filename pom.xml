@@ -58,7 +58,8 @@
                             <artifactSet>
                                 <includes>
                                     <include>com.cheatbreaker:CheatBreakerAPINetHandler</include>
-                                    <include>io.netty:netty-all</include>
+                                    <include>io.netty:netty-buffer</include>
+                                    <include>io.netty:netty-common</include>
                                 </includes>
                             </artifactSet>
                         </configuration>
