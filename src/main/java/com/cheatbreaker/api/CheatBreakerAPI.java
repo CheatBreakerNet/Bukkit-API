@@ -57,7 +57,7 @@ import java.util.stream.Collectors;
 
 public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
-    private static final String MESSAGE_CHANNEL = "CB-Client";
+    private static final String MESSAGE_CHANNEL = "cheatbreaker:pm";
 
     @Getter private static CheatBreakerAPI instance;
     private final Set<UUID> playersRunningCheatBreaker = new HashSet<>();
