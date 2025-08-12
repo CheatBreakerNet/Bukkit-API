@@ -13,7 +13,7 @@ jobs:
       - id: commit
         uses: prompt/actions-commit-hash@v3
       # Clone the repo & its submodules
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
       # Setup Java & Maven
