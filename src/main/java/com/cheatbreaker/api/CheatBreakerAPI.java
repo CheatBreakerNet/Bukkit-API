@@ -245,7 +245,11 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
     }
 
     public void setSwingInhibitor(Player player, int frequencyMs, double decayRate, int cpsCap) {
-        sendPacket(player, new CBPacketSwingInhibitorUpdate(frequencyMs, decayRate, cpsCap));
+        setSwingInhibitor(player, 0, frequencyMs, decayRate, cpsCap);
+    }
+
+    public void setSwingInhibitor(Player player, int type, int frequencyMs, double decayRate, int cpsCap) {
+        sendPacket(player, new CBPacketSwingInhibitorUpdate(type, frequencyMs, decayRate, cpsCap));
     }
 
     public void giveAllStaffModules(Player player) {
