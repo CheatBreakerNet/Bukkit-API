@@ -1,0 +1,5 @@
+name: cTeamView
+version: ${project.version}
+main: net.cheatbreaker.cteamview.cTeamView
+api-version: 1.13
+depend: [ CheatBreakerAPI ]
