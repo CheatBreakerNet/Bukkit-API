@@ -11,7 +11,7 @@ jobs:
     steps:
       # Get the latest commit ID
       - id: commit
-        uses: prompt/actions-commit-hash@v3
+        uses: prompt/actions-commit-hash@v4
       # Clone the repo & its submodules
       - uses: actions/checkout@v6
         with:
